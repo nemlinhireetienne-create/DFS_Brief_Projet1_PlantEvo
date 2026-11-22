@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f5f5f0;
+  color: #222;
+  line-height: 1.5;
+}
+
+/* ===== HEADER ===== */
+header {
+  background-color: #2e7d32;
+  color: white;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.logo-circle {
+  width: 42px;
+  height: 42px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.logo-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  align-items: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: opacity 0.2s;
+}
+
+nav a:hover {
+  opacity: 0.85;
+  text-decoration: underline;
+}
+
+.retour {
+  margin-left: 12px;
+  font-weight: 600;
+}
+
+/* ===== MAIN CONTENT ===== */
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 32px 24px 48px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 18px;
+  letter-spacing: 0.5px;
+}
+
+.intro {
+  text-align: center;
+  font-size: 1.05rem;
+  max-width: 720px;
+  margin: 0 auto 36px;
+  color: #333;
+}
+
+/* ===== GRID DES CARTES ===== */
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  margin-bottom: 36px;
+}
+
+.card {
+  background: #e8f5e9;
+  border-radius: 12px;
+  padding: 16px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.card img {
+  width: 100%;
+  max-width: 280px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  background: #c8e6c9;
+  display: block;
+  margin: 0 auto 12px;
+}
+
+.card.cycle img {
+  max-width: 180px;
+  height: 160px;
+  object-fit: contain;
+  background: transparent;
+}
+
+.card figcaption {
+  font-size: 0.92rem;
+  color: #1b5e20;
+  font-weight: 500;
+  line-height: 1.35;
+}
+
+/* ===== BLOC TEXTE BAS ===== */
+.info-box {
+  background: #e8f5e9;
+  border-radius: 12px;
+  padding: 22px 28px;
+  font-size: 1.02rem;
+  line-height: 1.55;
+  color: #222;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+}
+
+.info-box p {
+  margin-bottom: 14px;
+}
+
+.info-box p:last-child {
+  margin-bottom: 0;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background-color: #1b5e20;
+  color: white;
+  text-align: center;
+  padding: 18px 16px;
+  font-size: 0.9rem;
+}
+
+footer .title {
+  font-weight: 700;
+  font-size: 1.05rem;
+  margin-bottom: 4px;
+}
+
+footer .subtitle {
+  opacity: 0.9;
+  margin-bottom: 2px;
+}
+
+footer .copyright {
+  opacity: 0.75;
+  font-size: 0.82rem;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 700px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    gap: 6px 14px;
+  }
+
+  h1 {
+    font-size: 1.45rem;
+  }
+}
