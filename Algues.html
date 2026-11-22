@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PlantEvo Viewer - Les Algues</title>
-<link rel="stylesheet" href="css/Algue.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Les Algues – PlantEvo Viewer</title>
+  <link rel="stylesheet" href="css/Algue.css">
 </head>
 <body>
 
-<header class="header">
-  <div class="logo-zone">
-    <img src="image/PlantEvo.png" alt="PlantEvo Viewer" class="logo">
-    <span class="site-name">PlantEvo Viewer</span>
-  </div>
+  <!-- HEADER -->
+  <header>
+    <div class="logo">
+      <div class="logo-circle">
+        <!-- Remplacez par votre logo -->
+        <img src="image/PlantEvo.png" alt="Logo PlantEvo">
+      </div>
+      <span>PlantEvo Viewer</span>
+    </div>
 
-  <nav>
+    <nav>
       <a href="Algues.html">Algue</a>
       <a href="Mousse.html">Mousses</a>
       <a href="Fougère.html">Fougères</a>
@@ -23,48 +27,62 @@
       <a href="Dicotylédone.html">Dicotylédones</a>
       <a href="index.html" class="retour">Retour au menu</a>
     </nav>
-</header>
+  </header>
 
-<main>
-  <h1>LES ALGUES : LES PREMIERS VEGETAUX DANS L'EAU</h1>
-  <p class="intro">
-    Les algues (Chlorophytes). Ancêtres aquatiques dépourvus de racines, de tiges et de feuilles véritables,
-    elles réalisent la photosynthèse directement dans l'eau
-  </p>
+  <!-- CONTENU PRINCIPAL -->
+  <main>
+    <h1>LES ALGUES : LES PREMIERS VEGETAUX DANS L'EAU</h1>
 
-  <section class="grid">
-    <figure class="card">
-      <img src="image/Algue_verte.jpg" alt="Algue verte">
-      <figcaption>Algue verte (ulve) : un thalle en lame, sans racine ni tige</figcaption>
-    </figure>
+    <p class="intro">
+      Les algues (Chlorophytes). Ancêtres aquatiques dépourvus de racines, de tiges et de feuilles véritables,
+      elles réalisent la photosynthèse directement dans l'eau
+    </p>
 
-    <figure class="card">
-      <img src="image/Algue_brune.jpg" alt="Algue brune">
-      <figcaption>Algue brune (laminaire) : grand thalle fixé par un crampon</figcaption>
-    </figure>
+    <div class="cards">
+      <!-- Carte 1 -->
+      <figure class="card">
+        <img src="image/Algue_verte.jpg" alt="Algue verte">
+        <figcaption>Algue verte (ulve) : un thalle en lame, sans racine ni tige</figcaption>
+      </figure>
 
-    <figure class="card">
-      <img src="image/Algue_rouge.jpg" alt="Algue rouge">
-      <figcaption>Algue rouge : pigments adaptés à la lumière en profondeur</figcaption>
-    </figure>
+      <!-- Carte 2 -->
+      <figure class="card">
+        <img src="image/Algue_brune.jpg" alt="Algue brune">
+        <figcaption>Algue brune (laminaire) : grand thalle fixé par un crampon</figcaption>
+      </figure>
 
-    <figure class="card">
-      <img src="image/gamete_spore.webp" alt="Cycle algue">
-      <figcaption>Cycle : spores et gamètes dans l'eau</figcaption>
-    </figure>
-  </section>
+      <!-- Carte 3 -->
+      <figure class="card">
+        <img src="image/Algue_rouge.jpg" alt="Algue rouge">
+        <figcaption>Algue rouge : pigments adaptés à la lumière en profondeur</figcaption>
+      </figure>
 
-  <section class="info">
-    <p><strong>Appareil végétatif :</strong> Un simple thalle, sans vrai racines, tiges ni feuilles, l'eau soutient et nourrit l'algue</p>
-    <p><strong>Reproduction :</strong> spores et gamètes libérés dans l'eau, souvent avec alternance de generation. Les algues vertes sont les ancêtres des plantes terrestres.</p>
-  </section>
-</main>
+      <!-- Carte 4 - Cycle -->
+      <figure class="card cycle">
+        <img src="image/gamete_spore.webp" alt="Cycle de vie">
+        <figcaption>Cycle : spores et gamètes dans l'eau</figcaption>
+      </figure>
+    </div>
 
-<footer>
-  <strong>PlantEvo Viewer</strong><br>
-  Projet pédagogique - Digital Farming School<br>
-  © 2026 PlantEvo Viewer. Tous droits réservés.
-</footer>
+    <!-- Bloc d'informations -->
+    <div class="info-box">
+      <p>
+        <strong>Appareil végétatif :</strong> Un simple thalle, sans vrai racines, tiges ni feuilles, l'eau soutien et nourri
+        l'algue
+      </p>
+      <p>
+        <strong>Reproduction :</strong> spores et gamètes libérés dans l'eau, souvent avec alternance de génération.
+        Les algues vertes sont les ancêtres des plantes terrestres.
+      </p>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="title">PlantEvo Viewer</div>
+    <div class="subtitle">Projet pédagogique – Digital Farming School</div>
+    <div class="copyright">© 2026 PlantEvo Viewer. Tous droits réservés.</div>
+  </footer>
 
 </body>
 </html>
